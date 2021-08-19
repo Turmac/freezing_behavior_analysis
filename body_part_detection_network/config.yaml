@@ -1,0 +1,67 @@
+    # Project definitions (do not edit)
+Task: 
+scorer: 
+date: 
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: 
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  Subject0.mp4:
+    crop: 0, 720, 0, 1280
+  Subject1.mp4:
+    crop: 0, 720, 0, 1280
+  Subject2.mp4:
+    crop: 0, 720, 0, 1280
+  Subject3.mp4:
+    crop: 0, 720, 0, 1280
+  Subject4.mp4:
+    crop: 0, 720, 0, 1280
+bodyparts:
+- nose
+- leftear
+- rightear
+- lefthand
+- righthand
+- leftfoot
+- rightfoot
+- tailbegin
+- tailend
+start: 0
+stop: 1
+numframes2pick: 100
+
+    # Plotting configuration
+skeleton:
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+croppedtraining: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
