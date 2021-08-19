@@ -4,6 +4,8 @@
 Information    
 train_deeplabcut.py  
 The script to build deeplabcut project, extract frames from video, label the frames, training and testing.  
+The config.yaml file is an example of the config file we used in the experiment.  
+Our labelled data locates at body_part_detection_network/labeled-data  
 
 data_augumentation.py  
 After extracting the training frames, use data augumentation to the data.  
